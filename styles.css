@@ -28,6 +28,7 @@ body {
 
 /* Utility classes */
 .btn {
+    display: block;
     border-radius: 2rem;
     padding: 0.625rem 0.5rem;
     box-shadow: 0 0.125rem 0.125rem var(--synk-orange);
@@ -35,14 +36,19 @@ body {
     transition: all 0.3s;
     text-decoration: none;
 }
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
 .center-justify {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.btn:hover {
-    transform: scale(1.05);
+.center-justify.btn:hover {
+    transform: translateX(-50%) scale(1.05);
 }
 /* End of utility classes */
 
