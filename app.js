@@ -2,15 +2,17 @@
 const synkronix = document.querySelector('.synkronix');
 const synkDescription = document.querySelector('.synkronix-description');
 
-window.addEventListener('resize', f => {
+function changeDescWidth() {
     synkDescription.style.width = `${synkronix.offsetWidth}px`;
-});
+}
+changeDescWidth();
+window.addEventListener('resize', changeDescWidth);
 
 //Add class center-justify to some elements based on screen size
 const mediaQuery = window.matchMedia('(max-width: 680px)');
 const comingSoonBtn = document.querySelector('.main-coming-soon');
 
-window.addEventListener('resize', f =>{
+function centerJustify() {
     if(mediaQuery.matches) {
         synkronix.classList.add('center-justify');
         synkDescription.classList.add('center-justify');
@@ -21,7 +23,9 @@ window.addEventListener('resize', f =>{
         synkDescription.classList.remove('center-justify');
         comingSoonBtn.classList.remove('center-justify');
     }
-});
+}
+centerJustify();
+window.addEventListener('resize', centerJustify);
 
 window.addEventListener('resize', f => {
     console.log(window.innerWidth);
