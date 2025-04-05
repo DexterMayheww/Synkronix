@@ -1,0 +1,155 @@
+/* Imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* End of imported fonts */
+
+/* primary colors */
+:root {
+    --synk-orange: #D0371C;
+    --synk-orange-inner: #ED7D2E;
+    --synk-dispersed-glow: #712618;
+    --synk-black: #1C1C1C;
+    --synk-white: #FFFFFF;
+}
+/* End of primary colors */
+
+/* Utility classes */
+.btn {
+    border-radius: 2rem;
+    padding: 0.625rem 0.5rem;
+    box-shadow: 0 0.125rem 0.125rem var(--synk-orange);
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+.center-justify {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+/* End of utility classes */
+
+/* Body & background */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--synk-black);
+    position: relative;
+}
+
+.orange-ellipse-background-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 80vh;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    z-index: -9999;
+}
+
+.orange-ellipse-background {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -150%;
+    width: 95%;
+    height: 200%;
+    background-attachment: fixed;
+    background: radial-gradient(var(--synk-orange-inner), var(--synk-orange));
+    border: 3px solid var(--synk-orange-inner);
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    box-shadow: 10rem 20rem 20rem 17rem var(--synk-dispersed-glow), -10rem 20rem 20rem 17rem var(--synk-dispersed-glow);
+    z-index: -9999;
+}
+
+@media screen and (max-width: 1600px) {
+    .orange-ellipse-background-container {
+        width: 150%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .orange-ellipse-background-container {
+        width: 200%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .orange-ellipse-background-container {
+        width: 250%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .orange-ellipse-background-container {
+        width: 300%;
+    }
+}
+/* End of body & background */
+
+/* Navbar section */
+.navbar {
+    width: 100%;
+}
+
+.navbar-list {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.375rem 3rem;
+}
+
+.navbar-contact {
+    background-color: var(--synk-orange);
+    color: var(--synk-white);
+    border: 2px solid var(--synk-black);
+    font-size: 1rem;
+}
+/* End of navbar section */
+
+/* Main section */
+.main {
+    padding: 0.375rem 3rem;
+    color: var(--synk-white);
+}
+
+.synkronix {
+    font-size: 7rem;
+    margin-top: 5rem;
+    width: fit-content;
+}
+
+.synkronix-description {
+    text-align: justify;
+    margin: 1rem 0;
+}
+
+.main-coming-soon {
+    background-color: var(--synk-black);
+    color: var(--synk-white);
+}
+
+@media screen and (max-width: 960px) {
+    .synkronix {
+        font-size: 5rem;
+    }
+}
+@media screen and (max-width: 680px) {
+    .synkronix {
+        font-size: 3rem;
+    }
+}
+/* End of main section */
