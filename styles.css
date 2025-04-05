@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* End of imported fonts */
 
-/* primary colors */
+/* Root */
 :root {
     --synk-orange: #D0371C;
     --synk-orange-inner: #ED7D2E;
@@ -10,7 +10,21 @@
     --synk-black: #1C1C1C;
     --synk-white: #FFFFFF;
 }
-/* End of primary colors */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--synk-black);
+    position: relative;
+    overflow: hidden;
+}
+/* End of root */
 
 /* Utility classes */
 .btn {
@@ -32,20 +46,7 @@
 }
 /* End of utility classes */
 
-/* Body & background */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat";
-}
-
-body {
-    min-height: 100vh;
-    background-color: var(--synk-black);
-    position: relative;
-}
-
+/* Background */
 .orange-ellipse-background-container {
     position: absolute;
     bottom: 0;
@@ -96,7 +97,7 @@ body {
         width: 300%;
     }
 }
-/* End of body & background */
+/* End of background */
 
 /* Navbar section */
 .navbar {
