@@ -9,6 +9,13 @@
     --synk-dispersed-glow: #712618;
     --synk-black: #1C1C1C;
     --synk-white: #FFFFFF;
+    --synk-icon-color: #1d1d1d;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --synk-icon-color: transparent;
+    }
 }
 
 * {
