@@ -132,6 +132,10 @@ body {
     border: 2px solid var(--synk-black);
     font-size: 1rem;
 }
+
+.logo svg {
+    filter: url(#disable-anti-aliasing);
+}
 /* End of navbar section */
 
 /* Main section */
