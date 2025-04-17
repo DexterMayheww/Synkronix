@@ -6,7 +6,7 @@
 :root {
     --synk-orange: #D0371C;
     --synk-orange-inner: #ED7D2E;
-    --synk-dispersed-glow: #712618;
+    --synk-dispersed-glow: #572118;
     --synk-black: #1C1C1C;
     --synk-white: #FFFFFF;
     --synk-icon-color: #1d1d1d;
@@ -38,7 +38,7 @@ body {
     display: block;
     border-radius: 2rem;
     padding: 0.625rem 0.5rem;
-    box-shadow: 0 0.125rem 0.125rem var(--synk-orange);
+    box-shadow: 0 0.075rem 0.075rem var(--synk-orange);
     cursor: pointer;
     transition: all 0.3s;
     text-decoration: none;
@@ -46,6 +46,7 @@ body {
 
 .btn:hover {
     transform: scale(1.05);
+    box-shadow: 0 0.125rem 0.25rem var(--synk-orange);
 }
 
 .center-justify {
@@ -83,7 +84,7 @@ body {
     border: 3px solid var(--synk-orange-inner);
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
-    box-shadow: 10rem 20rem 20rem 17rem var(--synk-dispersed-glow), -10rem 20rem 20rem 17rem var(--synk-dispersed-glow);
+    box-shadow: 30rem 15rem 20rem 17rem var(--synk-dispersed-glow), -30rem 15rem 20rem 17rem var(--synk-dispersed-glow);
     z-index: -9999;
 }
 
@@ -123,7 +124,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.375rem 3rem;
+    padding: 2.5rem 5.625rem 0 5.625rem;
 }
 
 .navbar-contact {
@@ -136,11 +137,17 @@ body {
 .logo svg {
     filter: url(#disable-anti-aliasing);
 }
+
+@media screen and (max-width: 680px) {
+    .navbar-list {
+        padding: 2.5rem 2rem 0 2rem;
+    }
+}
 /* End of navbar section */
 
 /* Main section */
 .main {
-    padding: 0.375rem 3rem;
+    padding: 0.375rem 5.625rem;
     color: var(--synk-white);
 }
 
@@ -152,7 +159,7 @@ body {
 
 .synkronix-description {
     text-align: justify;
-    margin: 1rem 0;
+    margin: 0 0 5.25rem 0;
 }
 
 .main-coming-soon {
