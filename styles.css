@@ -37,6 +37,7 @@ body {
 .btn {
     display: block;
     border-radius: 2rem;
+    border: none;
     padding: 0.625rem 0.5rem;
     box-shadow: 0 0.075rem 0.075rem var(--synk-orange);
     cursor: pointer;
@@ -103,6 +104,7 @@ body {
 @media screen and (max-width: 640px) {
     .orange-ellipse-background {
         width: 250%;
+        box-shadow: 30rem 10rem 20rem 17rem var(--synk-dispersed-glow), -30rem 10rem 20rem 17rem var(--synk-dispersed-glow);
     }
 }
 
@@ -165,6 +167,8 @@ body {
 .main-coming-soon {
     background-color: var(--synk-black);
     color: var(--synk-white);
+    padding: 1.25rem 1rem;
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 960px) {
