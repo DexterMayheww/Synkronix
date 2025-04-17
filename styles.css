@@ -1,5 +1,10 @@
 /* Imported fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@font-face {
+    font-family: 'PP Neue Machina';
+    src: url(Fonts/PPNeueMachina-InktrapUltrabold.otf) format('opentype');
+}
 /* End of imported fonts */
 
 /* Root */
@@ -22,7 +27,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Montserrat";
 }
 
 body {
@@ -30,6 +34,7 @@ body {
     background-color: var(--synk-black);
     position: relative;
     overflow: hidden;
+    font-family: 'Satoshi';
 }
 /* End of root */
 
@@ -157,6 +162,12 @@ body {
     font-size: 7rem;
     margin-top: 5rem;
     width: fit-content;
+    font-family: 'PP Neue Machina';
+
+    span {
+        font-family: 'Playfair Display';
+        font-style: italic;
+    }
 }
 
 .synkronix-description {
@@ -167,8 +178,9 @@ body {
 .main-coming-soon {
     background-color: var(--synk-black);
     color: var(--synk-white);
-    padding: 1.25rem 1rem;
+    padding: 1rem 1.5rem;
     font-size: 1rem;
+    font-family: 'Satoshi';
 }
 
 @media screen and (max-width: 960px) {

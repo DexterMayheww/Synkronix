@@ -6,6 +6,9 @@ function changeDescWidth() {
     synkDescription.style.width = `${synkronix.offsetWidth}px`;
 }
 changeDescWidth();
+document.fonts.ready.then(() => {
+    changeDescWidth();
+});
 window.addEventListener('resize', changeDescWidth);
 
 //Add class center-justify to some elements based on screen size
@@ -27,6 +30,7 @@ function centerJustify() {
 centerJustify();
 window.addEventListener('resize', centerJustify);
 
+//Logging the current width of the screen
 window.addEventListener('resize', f => {
     console.log(window.innerWidth);
 });
